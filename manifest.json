@@ -6,7 +6,7 @@
     "manifest_version" : 2,
     "background": {
         "scripts" :[
-            "popip.js"
+            "popup.js"
         ],
        "persistent": true
     },
