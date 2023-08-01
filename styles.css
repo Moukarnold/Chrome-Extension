@@ -1,0 +1,118 @@
+/* styles.css */
+.half_Off {
+  right: 5px; 
+  text-align: right;
+}
+
+.half_On {
+  left: 5px;
+}
+
+.popup {
+  min-width: 344px;
+  min-width: 188px;
+  background: #FFFF;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgb(0, 0, 0.25);
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.yellow {
+  color: burlywood
+}
+
+p {
+  font-size: 0.75rem;
+}
+
+.button {
+  position: relative;
+  height: 2rem;
+  width: 4rem;
+  background-color: #FDFCA3;
+  border-radius: 25px;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.half {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: rgb(255, 213, 0);
+  pointer-events: none;
+  transition: 1s;
+}
+
+@keyframes transformToBlue {
+  0% {
+      background-color: #FDFCA3;
+  }
+  100% {
+      background-color: #8ABFF0;
+  }
+}
+
+@keyframes transformToYellow {
+  0% {
+      background-color: #8ABFF0;
+  }
+  100% {
+      background-color: #FDFCA3;
+  }
+}
+
+@keyframes moveAndTransform {
+  0% {
+      left: 0;
+      background-color: rgb(255, 213, 0);
+  }
+  100% {
+      right: 100%;
+      transform: translateX(100%);
+      background-color: #588BE4;
+  }
+}
+
+@keyframes moveCircleLeft {
+  0% {
+      left: 100%;
+      transform: translateX(-100%);
+      background-color: #588BE4;
+  }
+  100% {
+      right: 0;
+      transform: translateX(0);
+      background-color: rgb(255, 213, 0);
+  }
+}
+
+@keyframes moveCircleRight {
+  0% {
+      right: 0;
+      transform: translateX(100%);
+      background-color: rgb(255, 213, 0);
+  }
+
+100% {
+  left: 100%;
+  transform: translateX(-100%);
+  background-color: #588BE4;
+}
+}
